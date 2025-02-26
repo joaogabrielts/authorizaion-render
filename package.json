@@ -2,10 +2,13 @@
   "name": "authorization-and-authentication-atividades",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
+    "start": "node dist/server.js",
+    "build": "npx tsc" ,
     "dev": "tsnd --respawn src/server.ts",
     "migrate:dev": "npx prisma migrate dev",
+    "migrate:deploy": "npx prisma migrate deploy",
     "studio:dev": "npx prisma studio"
   },
   "keywords": [],
